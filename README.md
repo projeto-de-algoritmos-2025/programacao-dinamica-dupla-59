@@ -50,23 +50,7 @@ Dado um array de inteiros, encontrar o comprimento da maior subsequência estrit
 
 Ideia (DP + Busca Binária)
 
-Existem duas abordagens:
 
-1) DP clássica – O(n²)
-
-Para cada índice i, calcular dp[i] = tamanho da LIS terminando em i.
-
-Comparar com todos j < i e atualizar.
-
-2) DP otimizada – O(n log n)
-
-Manter um vetor lis representando o menor final possível para subsequências de cada tamanho.
-
-Usar lower_bound para encontrar onde inserir o próximo número.
-
-O tamanho de lis ao final é a resposta.
-
-Essa é a técnica usada nas soluções mais eficientes do LeetCode.
 
 
 Apresentação
